@@ -1,0 +1,13 @@
+ESLint
+
+Auto Rename Tag
+
+HTML CSS Support
+
+JavaScript (ES6) code snippets
+
+Emoji
+
+Live Server
+
+Material Icon
