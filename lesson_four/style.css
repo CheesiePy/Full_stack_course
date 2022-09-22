@@ -1,0 +1,26 @@
+.first-heading { /* This is for class */
+    color: #ffffff;
+}
+
+#second-heading { /* This is for id */
+    text-size-adjust: 5px;
+    color: #3830dc;
+    background: #ffffff;
+}
+
+
+
+body {
+    background-color: #1629bc;
+}
+
+p{
+    font-size: 20px;
+}
+
+.boldtype {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
