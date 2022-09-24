@@ -1,0 +1,72 @@
+body{
+    background-color:black;
+    color:white;
+}
+
+
+
+.header{
+    font-family: 'Bungee Spice', cursive;
+    font-size: 4em;
+    text-align: center;
+}
+    
+.parent{
+    background-color: rgb(40, 27, 40);
+    height: 100%;
+    width: 75vw;
+    padding: 1em;
+    margin: 1em;
+    
+    left: 10%;
+    top: 10%;
+}
+
+.child{
+    background-color: rgb(44, 44, 60);
+    text-align: center;
+    /* position: absolute; */
+    top:0;
+    bottom:0;
+    left:10%;
+    right:50%;
+
+
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes bounce{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-20px);
+    }
+}
+
+.bouncing-card{
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.card{
+    animation: fade-in 1s;
+}
+
+#belly{
+    background-color: blue;
+}
+
+.jelly{
+    background-color: pink;
+}
+
+
+
