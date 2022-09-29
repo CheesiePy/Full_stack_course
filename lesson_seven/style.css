@@ -1,0 +1,65 @@
+@media only screen and (max-width: 768px){
+    body {
+        background-color: #37ca27;
+    }
+
+    h2{
+        color: red
+    }
+
+
+}
+
+
+
+ .container{
+    display: flex;
+    background-color: aquamarine; 
+    flex-direction: row-reverse; /* column, row, column-reverse, row-reverse, */
+    flex-wrap: wrap; /*wrap, nowrap, wrap-reverse */
+    justify-content:center; /*flex-start, flex-end, center, space-between, space-around, space-evenly */
+} 
+
+ .child{
+    background-color: #f1f1f1;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/* pseudo-class */
+.child:hover{
+    animation: breathing 3s linear infinite alternate;
+}
+
+.child:active{
+    animation: identifier 2s ease-in-out infinite alternate; 
+    /* background-color: red;
+    width: 200px;
+    height: 200px; */
+}
+
+@keyframes breathing {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+    
+}
+
+@keyframes identifier {
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(15%);
+    }
+    
+    
+}

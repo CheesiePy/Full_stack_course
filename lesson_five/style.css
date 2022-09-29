@@ -17,7 +17,7 @@ body{
     width: 75vw;
     padding: 1em;
     margin: 1em;
-    
+    position: relative;
     left: 10%;
     top: 10%;
 }
