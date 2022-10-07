@@ -1,0 +1,96 @@
+body{
+    background-image: url("static/backgroundwide.png");
+    background-repeat: no-repeat;
+}
+
+
+
+.container{
+    width: 50%;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("static/backgroundwide.png");
+    animation: glowing_box 15s infinite alternate ease-out;
+}
+
+.card {
+    background-color: #00000000;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: glowing_box 3s infinite alternate ease-out;
+    color:#ff9d0061;
+}
+
+
+
+
+.txt {
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #00000023;
+    animation: glowing_letters 2.71828s infinite alternate linear;
+}
+
+.input_box {
+    margin: 10px;
+    background-color: #00000000;
+    border-radius: 10px;
+    border: 1px solid #53300878;
+    animation: glowing_box 15s infinite alternate ease-out;
+}
+
+.input_box:focus {
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #ffffff , 2px 2px 7px #ffffff;
+    transform: scale(1.2);
+    
+}
+
+.btn {
+    
+    margin: 10px;
+    background-color: #00000000;
+    border-radius: 5px;
+    border: 1px solid #53300878;
+    animation: glowing_box 1s infinite alternate ease-out;
+}
+
+
+.btn:hover {
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #ffffff , 2px 2px 7px #ffffff;
+    transform: scale(1.2);
+    
+}
+
+
+
+
+@keyframes glowing_letters{
+    0%{
+        text-shadow: 2px 2px 5px #ff9d00;
+    }
+    100%{
+        text-shadow: 2px 2px 5px #ff9d0046;
+    }
+}
+
+
+@keyframes glowing_box{
+    0%{
+        box-shadow: 2px 2px 20px #ff9d0022;
+    }
+    100%{
+        box-shadow: 3px 3px 15px #ff9d00;
+    } 
+    
+}
