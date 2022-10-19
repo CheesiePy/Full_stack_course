@@ -13,21 +13,17 @@
 <body>
     <div class="container">
         <div class="card">
-            <form action="form.html" target="_blank" method="GET">
+            <form style="color:greed;" action="form.html" target="_blank" method="GET">
                 <label class="txt" for="fname">First Name:</label><br>
                 <input class="input_box" type="text" id="fname" name="fname" placeholder="Enter your name"><br>
                 <label class="txt" for="lname">Last Name:</label><br>
                 <input class="input_box" type="text" id="lname" name="lname" placeholder="Enter your last name"><br>
-                <input class="btn" type="submit" value="submit">
+                <input class="btn" type="submit" value="submit" onclick="function myFunction(){}">
             </form>
         </div>
     </div>
 </body>
-<script>
-    localStorage.setItem("fname", document.getElementById("fname").value);
-    localStorage.setItem("lname", document.getElementById("lname").value);
+<script src="script.js">
 
-    console.log(localStorage);
 </script>
-
 </html>
