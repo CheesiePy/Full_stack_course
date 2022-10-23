@@ -1,0 +1,113 @@
+
+.parent{
+    position: relative;
+}
+
+.child{
+    position: absolute;
+    left: 48vw;
+    padding: 10px;
+}
+
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: solid 1px blue;
+    animation: rotate-z 1s linear infinite;
+    align-self: center;
+}
+
+.square:hover {
+    background-color: blue;
+    border: solid 1px red;
+}
+
+.square2 {
+    width: 100px;
+    height: 100px;
+    border: solid 2px blue;
+    animation: color-change 2s linear infinite;
+}
+
+.square2:hover {
+    cursor:progress;
+    border: solid 2px red;
+}
+
+.square3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: solid 1px blue;
+    animation: rotate-x 1s linear infinite;
+}
+
+.square3:hover {
+    background-color: blue;
+    border: solid 1px red;
+}
+
+@keyframes color-change {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+
+@keyframes rotate-z {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-x {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: blue;
+    }
+
+    50% {
+
+        background-color: greenyellow;
+    }
+
+    75% {
+        background-color: magenta;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
