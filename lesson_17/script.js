@@ -70,6 +70,8 @@ if (! ( !(!coin3 && !coin) || !(coin || !coin3)  )){ // true
 }
 
 
+// this is a clone!
+
 // everythin with a value is true except for 0, null, undefined, NaN, false
 
 
