@@ -69,6 +69,24 @@ if (! ( !(!coin3 && !coin) || !(coin || !coin3)  )){ // true
     console.log("im inside a conditinal")
 }
 
+/**
+ *  |
+ *  |
+ *  |
+ *  |
+ * /|\
+ * 
+ * 
+ */
+
+if(10 < 11){
+    console.log(1)
+}
+else if(12 > 2){
+    console.log(2)
+}else{
+    console.log(3)
+}
 
 // this is a clone!
 
