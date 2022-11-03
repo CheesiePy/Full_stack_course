@@ -14,6 +14,11 @@ const car = {type:"Volvo",
              print_val:function(){console.log(this.price)}
             };
  
+
+car.run()
+ 
+ 
+ 
             
 // objects have properys
 // console.log(car.type);
