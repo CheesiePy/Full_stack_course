@@ -1,26 +1,41 @@
 // Objects
 
-const car = {type:"Volvo",
-             price:18000,
-             color:"red", 
-             fual:10,
-             run:function() {
-                while( this.fual > 0){
-                    console.log("driving..");
-                    this.fual--;
-                }
-                console.log("out of fual");
-             },
-             print_val:function(){console.log(this.price)}
-            };
- 
+// const engine1 = {
+//     hp: 1000,
+//     year: 1999,
+//     capacity: 500
+// }
+// const engine2 = {
+//     hp: 1000,
+//     year: 2022,
+//     capacity: 1500
+// }
 
-car.run()
+
+// const car = {
+//              type:"Volvo",
+//              price:18000,
+//              color:"red", 
+//              fual:10,
+//              engine: engine1,
+//              run:function() {
+//                 while( this.fual > 0){
+//                     console.log("driving..");
+//                     this.fual--;
+//                 }
+//                 console.log("out of fual");
+//              },
+//              print_val:function(){console.log(this.price)}
+//             };
+
+// //car.run()
+
+// console.log(car)
  
  
  
             
-// objects have properys
+// // objects have properys
 // console.log(car.type);
 // console.log(car["type"]);
 
@@ -43,27 +58,27 @@ car.run()
 
 
 // //car.run();
+Date
+const date = new Date();
 
-// const date = new Date();
-
-// console.log(date);
+console.log(date);
 
 
 
-class Car {
-    constructor(name="Volvo", year=1999){
-        this.year = year;
-        this.name = name;
-    }
+// class Car {
+//     constructor(name="Volvo", year=1999){
+//         this.year = year;
+//         this.name = name;
+//     }
 
-    show(){
-        return this.name + " " + this.year;
-    }
-}
+//     show(){
+//         return this.name + " " + this.year;
+//     }
+// }
 
-const car1 = new Car();
-const car2 = new Car("BMW");
-const car3 = new Car("Bugati", 2022);
-console.log(car1.show());
-console.log(car2.show());
-console.log(car3.show());
+// const car1 = new Car();
+// const car2 = new Car("BMW");
+// const car3 = new Car("Bugati", 2022);
+// console.log(car1.show());
+// console.log(car2.show());
+// console.log(car3.show());

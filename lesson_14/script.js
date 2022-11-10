@@ -1,58 +1,64 @@
-// functions 
+// // functions 
 
-// function can preform a task or return a value
-
-
-function my_function(parameter1, parameter2) {
-    // do something
-    console.log(parameter1 + parameter2);
-} // this function does not return a value
+// // function can preform a task or return a value
 
 
+// function my_function(parameter1="a", parameter2="b") {
+//     // do something
+//     console.log(parameter1 + parameter2);
+// } // this function does not return a value
 
 
-function my_function2(parameter1, parameter2) {
-    // do something
-    return parameter1 + parameter2;
-} // this function returns a value
-
-// call the function
-let argument1 = 1;
-let argument2 = 2;
+// // console.log("im out side the function: ", my_function());
 
 
-my_function(argument1, argument2);
+// function my_function2(parameter1, parameter2) { // manipulator 
+//     // do something
+//     return parameter1 + parameter2;
+// } // this function returns a value
 
-let result = my_function2(argument1, argument2);
+// // call the function
+// let argument1 = 1;
+// let argument2 = 2;
 
-let s = my_function2(result, result);
 
-console.log(result);
-console.log(s);
+// my_function(argument1, argument2);
 
-function stringDecorator(str , decorator){
-    return decorator + str + decorator;
+// let result = my_function2(argument1, argument2);
+
+// let s = my_function2(result, result);
+
+// console.log(result);
+// console.log(s);
+
+// function stringDecorator(str , decorator="dec", str2="str"){
+//     return decorator + str + decorator + str2;
+// }
+
+// console.log(stringDecorator("may", "$$$"));
+
+
+// // get user input using the prompt function
+
+// let mystring = "hello";
+// let mystring2 = "lello";
+// let mystring3 = "1";
+// let mynum = 1;
+
+// my_function(mystring, mystring2);
+// my_function(mystring3,mystring3);
+// my_function(mynum, mynum);
+
+
+
+function calc(a ,b , choice){
+    if(typeof(a) != typeof(Number) || typeof(b) != typeof(Number)){
+        return 
+    }
+    return a + b;
 }
 
-console.log(stringDecorator("hello", "_XXX_"));
 
-
-// get user input using the prompt function
-
-let mystring = "hello";
-let mystring2 = "lello";
-let mystring3 = "1";
-let mynum = 1;
-
-my_function(mystring, mystring2);
-my_function(mystring3,mystring3);
-my_function(mynum, mynum);
-
-
-
-function calc(a ,b){
-    return Number(a) + Number(b);
-}
 
 function user_input() {
     let num1 = prompt("Enter a number: ");
@@ -61,8 +67,9 @@ function user_input() {
     alert(result);
     alert(" this is the values you entered " + num1 + " + " + num2 + " = " + result); // string concatenation
     alert(`${num1} + ${num2} = ${result}`); // template literal (` is not the same as ' or ")
- 
 }
+
+
 
 
 
