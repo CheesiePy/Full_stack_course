@@ -1,15 +1,15 @@
 
 // // scope
-// let x = 5 // global scope 
+let x = 5 // global scope 
 
-// function f(a){
-//     let x = 6 // local scope of f()
-//     function g(){
-//         let x = 7 // local scope of g()
-//         return x;
-//     }
-//     return g();
-// }
+function f(a){
+    let x = 6 // local scope of f()
+    function g(){
+        let x = 7 // local scope of g()
+        return x;
+    }
+    return g();
+}
 
 
 
