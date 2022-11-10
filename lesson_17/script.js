@@ -35,8 +35,9 @@
 
 
 //find largest number in an array
-//let c = Math.max(...[1, 2, 3, 4, 5, 16, 7, 8, 9, 10]); // the triple dots are the spread operator
-//console.log(c);
+let arr = [1, 2, 3, 4, 5, 16, 7, 8, 9, 10]
+let c = Math.max(...arr); // the triple dots are the spread operator
+console.log(c);
 
 
 // // spread operator example
@@ -48,45 +49,45 @@
 
 // Boolean values
 
-let t = true;
-let f = false;
+// let t = true;
+// let f = false;
 
-let coin = t && f; // AND operator
-let coin2 = t || f; // OR operator
-let coin3 = !t; // NOT operator
+// let coin = t && f; // AND operator
+// let coin2 = t || f; // OR operator
+// let coin3 = !t; // NOT operator
 
-console.log(coin); // false
-console.log(coin2); // true
-console.log(coin3); // false
+// console.log(coin); // false
+// console.log(coin2); // true
+// console.log(coin3); // false
 
-if (!(coin2 && coin3)){ // true
-    console.log("im inside a conditinal")
-}
-if (coin || !coin3){ // true
-    console.log("im inside a conditinal")
-}
-if (! ( !(!coin3 && !coin) || !(coin || !coin3)  )){ // true
-    console.log("im inside a conditinal")
-}
+// if (!(coin2 && coin3)){ // true
+//     console.log("im inside a conditinal")
+// }
+// if (coin || !coin3){ // true
+//     console.log("im inside a conditinal")
+// }
+// if (! ( !(!coin3 && !coin) || !(coin || !coin3)  )){ // true
+//     console.log("im inside a conditinal")
+// }
 
-/**
- *  |
- *  |
- *  |
- *  |
- * /|\
- * 
- * 
- */
+// /**
+//  *  |
+//  *  |
+//  *  |
+//  *  |
+//  * /|\
+//  * 
+//  * 
+//  */
 
-if(10 < 11){
-    console.log(1)
-}
-else if(12 > 2){
-    console.log(2)
-}else{
-    console.log(3)
-}
+// if(10 < 11){
+//     console.log(1)
+// }
+// else if(12 > 2){
+//     console.log(2)
+// }else{
+//     console.log(3)
+// }
 
 // this is a clone!
 

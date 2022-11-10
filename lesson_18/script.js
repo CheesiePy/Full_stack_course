@@ -21,7 +21,7 @@ function getRandomNumber(min, max) {
 let k = getRandomNumber(5, 55);
 // console.log(k);
 
-let max = 55, min= 5;
+let max = 55, min = 5;
 let m = 0;
 // while (m <= 55){
 //     m = Math.floor(Math.random() * (max - min + 1)) + min       // [0 ,54] -> [5, 59]   goal [5,55]
@@ -46,16 +46,19 @@ let m = 0;
 
 // // for in loop (for objects)
 let obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
-// for (let i in obj) {
-//     console.log(i);
-// }
+for (let i in obj) {
+    console.log(obj[i]);
+}
+
 
 // // for of loop (for arrays)
 let arr = [1, 2, "May", 4, 5, "Python"];
 
-// for(let j =0; j < arr.length; j++){
-//     console.log(arr[j])
-// }
+for(let j =0; j < arr.length; j++){
+    
+}
+
+
 
 // for (let i of arr) {
     // console.log(typeof(i));
@@ -87,20 +90,26 @@ let arr = [1, 2, "May", 4, 5, "Python"];
 // }
 // recursiveLoop(0);
 
-// let x = [];
-// const arr2 = [100, 2, 5, 35, 1];
+const x = [];
+const arr2 = [100, 2, 5, 35, 1];
 
-// function func(val){
-//     x.push(val*5);
-// }
-
-// arr2.forEach(func);
-
-// console.log(x);
-
-function ml(){
-    let x;
-    while(x != "Quit"){
-        x = prompt("enter a value:" );
-    }
+function func(val, index){
+    arr2[index] = val*5;
 }
+
+arr2.forEach(func);
+
+// iterator
+
+for(let i of arr2){
+    arr2[arr2.indexOf(i)] = 500;
+}
+
+console.log(arr2)
+
+// function ml(){
+//     let x;
+//     while(x != "Quit"){
+//         x = prompt("enter a value:" );
+//     }
+// }
