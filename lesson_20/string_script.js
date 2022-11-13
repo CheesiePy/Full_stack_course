@@ -74,7 +74,12 @@ let s = a.search("l");
 console.log(s);
 
 // 19. replace() - searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced
-let t = a.replace("l", "L");
+let t = a.replace("key", "");
+let ts = `${e.code}`
+ts = "KeyD"
+ts[ts.length-1]
+let x = ts.replace("Key", "")
+
 console.log(t);
 
 // 20. match() - searches a string for a specified value, or a regular expression, and returns the matches

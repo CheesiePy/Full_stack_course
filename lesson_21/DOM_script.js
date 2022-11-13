@@ -13,7 +13,8 @@ function getUserInput() {
     let c_password = document.getElementById("confirm-password").value;
 
     if( password == c_password){
-        alert(firstname + " " + lastname + "\n" + email + "\n" + password + "\n" + c_password);    
+        alert(firstname + " " + lastname + "\n" + email + "\n" + password + "\n" + c_password);
+        console.log(firstname + " " + lastname + "\n" + email + "\n" + password + "\n" + c_password)    
     }else{
         alert("password not match");
     }
