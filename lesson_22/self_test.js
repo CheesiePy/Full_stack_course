@@ -1,6 +1,17 @@
 // first test
 // 10 questions total (10 points each), bonus (solve the code in a single line)
 
+
+
+def f(){
+    
+}
+
+
+
+
+
+
 // Q1
 /** 
 The parameter weekday is True if it is a weekday, and the parameter vacation is True if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return True if we sleep in.
