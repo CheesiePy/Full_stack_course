@@ -2,38 +2,40 @@
 // 10 questions total (10 points each), bonus (solve the code in a single line)
 
 
-
-def f(){
-    
-}
-
-
-
-
-
-
 // Q1
 /** 
-The parameter weekday is True if it is a weekday, and the parameter vacation is True if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return True if we sleep in.
+The parameter weekday is True if it is a weekday,
+and the parameter vacation is True if we are on vacation.
+We sleep in if it is not a weekday or we're on vacation. 
+Return True if we sleep in.
 
 sleep_in(False, False) → True
 sleep_in(True, False) → False
 sleep_in(False, True) → True
- */
+*/
 
-function sleep_in(weekday, vacation) {}
+function sleep_in(weekday, vacation) {
+    // return !weekday || vacation;
+    return !weekday || vacation 
+}
 
 
 // Q2
 /**
- * We have two monkeys, a and b, and the parameters a_smile and b_smile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return True if we are in trouble.
+ * We have two monkeys, a and b,
+ * and the parameters a_smile and b_smile indicate if each is smiling.
+ * We are in trouble if they are both smiling or if neither of them is smiling.
+ * Return True if we are in trouble.
  * 
  * monkey_trouble(True, True) → True
  * monkey_trouble(False, False) → True
  * monkey_trouble(True, False) → False
  *  */
 
-function monkey_trouble(a_smile, b_smile) {}
+function monkey_trouble(a_smile, b_smile) {
+    return a_smile == b_smile
+    
+}
 
 //Q3
 /**
@@ -43,9 +45,13 @@ function monkey_trouble(a_smile, b_smile) {}
  * sum_double(1, 2) → 3
  * sum_double(3, 2) → 5
  * sum_double(2, 2) → 8
+ * sum_double(2, 2)
  *  */
 
-function sum_double(a, b) {}
+function sum_double(a, b) {
+    return a == b ? (a + b)*2 : a + b;
+
+}
 
 //Q4
 /**
@@ -56,7 +62,15 @@ function sum_double(a, b) {}
  * string_times('Hi', 1) → 'Hi'
  *  */
 
-function string_times(str, n) {}
+function string_times(str, n) {
+    let mystr = "";
+    for(let i = 0; i < n; i++){
+        mystr += str;
+    }
+    return mystr;
+}
+
+console.log(string_times("Hi", 19))
 
 
 //Q5
@@ -74,7 +88,9 @@ function string_times(str, n) {}
 
 * */
 
-function lucky_sum(a, b, c) {}
+function lucky_sum(a, b, c) {
+    return a === 13 ? 0 : b === 13 ? a : c === 13 ? a + b : a + b + c;
+}
 
 
 //Q6
@@ -90,7 +106,9 @@ function lucky_sum(a, b, c) {}
  * make_bricks(3, 2, 10) → True
  *  */
 
-function make_bricks(small, big, goal) {}
+function make_bricks(small, big, goal) {
+    return goal % 5 <= small && goal - big * 5 <= small;
+}
 
 
 //Q7
@@ -102,19 +120,36 @@ wordsCount(["a", "bb", "b", "ccc"], 3) → 1
 wordsCount(["a", "bb", "b", "ccc"], 4) → 0
     *  */
 
-function wordsCount(words, len) {}
-
+function wordsCount(words, len) {
+    let count = 0;
+    for (let i = 0; i < words.length; i++) {
+        if (words[i].length === len) {
+            count++;
+        }
+    }
+    return count;
+}
 
 //Q8
 /**
- * Given a positive int n, return true if it contains a 1 digit. Note: use % to get the rightmost digit, and / to discard the rightmost digit.
+ * Given a positive int n, 
+ * return true if it contains a 1 digit.
+ *  Note: use % to get the rightmost digit, and / to discard the rightmost digit.
  * 
  * has_one(10) → True
  * has_one(22) → False
  * has_one(220) → False
  * */
 
-function has_one(n) {}
+function has_one(n) {
+    while(n > 0){
+        if(n % 10 === 1){
+            return true;
+        }
+        n = Math.floor(n / 10);
+    }
+    return false;
+}
 
 
 //Q9
@@ -132,7 +167,16 @@ bigHeights([5, 3, 6, 7, 2], 0, 1) → 0
 bigHeights([5, 3, 6, 7, 2], 0, 4) → 1
 */
 
-function bigHeights(heights, start, end) {}
+function bigHeights(heights, start, end) {
+
+    let count = 0;
+    for (let i = start; i < end; i++) {
+        if (Math.abs(heights[i] - heights[i + 1]) >= 5) {
+            count++;
+        }
+    }
+    return count;
+}
 
 //Q10
 /**
@@ -147,7 +191,15 @@ wordsWithout(["a", "b", "c", "a"], "b") → ["a", "c", "a"]
 wordsWithout(["a", "b", "c", "a"], "c") → ["a", "b", "a"]
 */
 
-function wordsWithout(words, target) {}
+function wordsWithout(words, target) {
+    let arr = [];
+    for (let i = 0; i < words.length; i++) {
+        if (words[i] !== target) {
+            arr.push(words[i]);
+        }
+    }
+    return arr;
+}
 
 
 
