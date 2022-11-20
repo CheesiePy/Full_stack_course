@@ -31,9 +31,22 @@ function printMat(m){
      * [0,0,0]
      * [0,0,0]
      */
+    for(let i = 0; i < m.length; i++){
+        console.log(m[i])
+    }
 }
 
+printMat(m)
 
+
+function diagonal(m, val=1){
+    /**
+     *  [ val, 0, 0 ]
+        [ 0, val, 0 ]
+        [ 0, 0, val ] 
+     *
+     *  */ 
+}
 
 // mutables and imutables
 
