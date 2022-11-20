@@ -7,7 +7,7 @@ let matrix = [[0,0,0],[0,0,0],[0,0,0]]
  * n x n 
  */
 
-function matrixBuilder(size, val=0){
+function matrixBuilder(size=3, val=0){
     let matrix = []
     for(let row = 0; row < size; row++){ // this for loop will run size times.
         let inner_arr = []
@@ -19,14 +19,23 @@ function matrixBuilder(size, val=0){
     return matrix
 }
 
-let m = matrixBuilder(3)
+let m = matrixBuilder()
 
 
 function setIndex(i,j,val){
 
-}
+}// -> [[0,0,0],[0,1,0],[0,0,0]]
 
-// -> [[0,0,0],[0,1,0],[0,0,0]]
+let arr = [0,0,0]
+function f(i, val, arr){
+    arr[i] = val;
+    return arr;
+}
+f(1,2,arr)
+console.log(arr)
+
+
+
 
 
 
