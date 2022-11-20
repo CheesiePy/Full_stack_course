@@ -21,23 +21,21 @@ function matrixBuilder(size=3, val=0){
 
 let m = matrixBuilder()
 
-
-function setIndex(i,j,val){
-
-}// -> [[0,0,0],[0,1,0],[0,0,0]]
-
-let arr = [0,0,0]
-function f(i, val, arr){
-    arr[i] = val;
-    return arr;
+function setIndex(matrix,i,j,val){
+    matrix[i][j] = val;
 }
-f(1,2,arr)
-console.log(arr)
+
+function printMat(m){
+    /**
+     * [0,0,0]
+     * [0,0,0]
+     * [0,0,0]
+     */
+}
 
 
 
-
-
+// mutables and imutables
 
 
 
