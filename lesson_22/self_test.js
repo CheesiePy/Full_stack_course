@@ -70,7 +70,7 @@ function string_times(str, n) {
     return mystr;
 }
 
-console.log(string_times("Hi", 19))
+//console.log(string_times("Hi", 19))
 
 
 //Q5
@@ -92,6 +92,19 @@ function lucky_sum(a, b, c) {
     return a === 13 ? 0 : b === 13 ? a : c === 13 ? a + b : a + b + c;
 }
 
+function lucky_sum2(a,b,c){
+    if(a == 13){
+        return 0
+    }
+    if(b == 13){
+        return a
+    }
+    if(c == 13){
+        return a + b
+    }        
+    return a + b + c
+}
+
 
 //Q6
 /**
@@ -104,30 +117,35 @@ function lucky_sum(a, b, c) {
  * make_bricks(3, 1, 8) → True
  * make_bricks(3, 1, 9) → False
  * make_bricks(3, 2, 10) → True
+ * make_bricks(1, 5, 22) -> False
  *  */
 
 function make_bricks(small, big, goal) {
     return goal % 5 <= small && goal - big * 5 <= small;
 }
 
+//console.log(make_bricks(1, 5, 22))
+
 
 //Q7
 /**
- * Given an array of strings, return the count of the number of strings with the given length.
+ *Given an array of strings,
+ *return the count of the number of strings with the given length.
 
 wordsCount(["a", "bb", "b", "ccc"], 1) → 2
 wordsCount(["a", "bb", "b", "ccc"], 3) → 1
 wordsCount(["a", "bb", "b", "ccc"], 4) → 0
     *  */
 
+let words = ["a", "bb", "b", "ccc", "cc", "cc", "Cc", "c"]
+
 function wordsCount(words, len) {
-    let count = 0;
+    let counter = 0;
     for (let i = 0; i < words.length; i++) {
-        if (words[i].length === len) {
-            count++;
+        if (words[i].length == len) {
+            counter++;
         }
-    }
-    return count;
+    }    return counter;
 }
 
 //Q8
@@ -141,9 +159,10 @@ function wordsCount(words, len) {
  * has_one(220) → False
  * */
 
+
 function has_one(n) {
     while(n > 0){
-        if(n % 10 === 1){
+        if(n % 10 == 1){
             return true;
         }
         n = Math.floor(n / 10);
@@ -151,11 +170,17 @@ function has_one(n) {
     return false;
 }
 
+let x;
+console.log(10505 % 10) // 0 -> 9 // 0 -> n-1
+
+
+
+
 
 //Q9
 /*
 
-We have an array of heights, 
+We have an array of heights, // מערך של גבהים
 representing the altitude along a walking trail. 
 Given start/end indexes into the array, 
 return the number of "big" steps for a walk starting at the start index and ending at the end index. 
@@ -168,8 +193,7 @@ bigHeights([5, 3, 6, 7, 2], 0, 4) → 1
 */
 
 function bigHeights(heights, start, end) {
-
-    let count = 0;
+    let count = 0; // counts "big steps"
     for (let i = start; i < end; i++) {
         if (Math.abs(heights[i] - heights[i + 1]) >= 5) {
             count++;
