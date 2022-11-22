@@ -63,7 +63,7 @@ function diagonalT(m){
 
 }
 
-function box(){
+function box(m , val){
     /**
      * size = 3
      *  1 1 1
@@ -71,13 +71,30 @@ function box(){
      *  1 1 1
      * 
      * size = 6
-     * 1 1 1 1 1 1
+     * (i, 0)
+     * 1 1 1 1 1 1 (0, j)
      * 1 0 0 0 0 1
      * 1 0 0 0 0 1 
      * 1 0 0 0 0 1
      * 1 0 0 0 0 1
-     * 1 1 1 1 1 1
+     * 1 1 1 1 1 1 (m.length - 1, j)
+     *         (i, m.length -1)
      * */
+    for(let i=0; i < m.length; i++){
+        for(let j=0; j < m.length; j++){
+            if( i == 0 || j == 0 || i == m.length -1 || j == m.length - 1){
+                setIndex(m, i,j, 1)
+            }
+        }
+    }
+
+
+
+}
+
+
+function matrixToArray(m){
+    // [1, 1, 1, 1, 0, 1, 1, 1, 1]
 }
 
 function main(){
@@ -88,7 +105,9 @@ function main(){
     //diagonal(m)
     //printMat(m)
     console.log(promp)
-    diagonalT(m)
+    // diagonalT(m)
+    // printMat(m)
+    box(m)
     printMat(m)
 }
 
