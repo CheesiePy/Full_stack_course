@@ -94,8 +94,28 @@ function box(m , val){
 
 
 function matrixToArray(m){
-    // [1, 1, 1, 1, 0, 1, 1, 1, 1]
+    /** input:
+     *  1 1 1
+     *  1 0 1
+     *  1 1 1
+     * 
+     */
+    // output:[1, 1, 1, 1, 0, 1, 1, 1, 1]
 }
+
+function ArraytoMatrix(arr){
+    /**
+     * input: [1, 1, 1, 1, 0, 1, 1, 1, 1].lengh = size**2
+     * 
+     * output:
+     *  1 1 1
+     *  1 0 1
+     *  1 1 1
+     * 
+     * 
+     */
+}
+
 
 function main(){
     let promp = "------\n------\n------"

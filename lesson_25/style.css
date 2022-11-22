@@ -19,8 +19,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: glowing_box 3s infinite alternate ease-out;
-    color:#ff9d0061;
 }
 
 button{
