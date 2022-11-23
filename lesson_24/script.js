@@ -94,7 +94,16 @@ function box(m , val){
 
 
 function matrixToArray(m){
-    /** input:
+    let arr = []
+    for(let i = 0; i < m.length; i++){
+        // arr.push(...m[i])
+        for(let j = 0; j < m.length; j++){
+            arr.push(m[i][j])
+        }
+    }
+    return arr
+    
+    /** input
      *  1 1 1
      *  1 0 1
      *  1 1 1
@@ -102,6 +111,7 @@ function matrixToArray(m){
      */
     // output:[1, 1, 1, 1, 0, 1, 1, 1, 1]
 }
+
 
 function ArraytoMatrix(arr){
     /**
@@ -113,6 +123,24 @@ function ArraytoMatrix(arr){
      *  1 1 1
      * 
      * 
+     */
+}
+
+
+function indexC(i,j,size){
+    /**
+     * 
+     * 
+     *  input i = 1 , j = 2 , size = 3:
+     *  (1,1) = center
+     *  1  1  1
+     *  1  0 (1)
+     *  1  1  1
+     * 
+     * 
+     * 
+     * output = 5 index of the array that represent the matrix
+     * [1,1,1,1,0,(1),1,1,1]
      */
 }
 
@@ -129,6 +157,9 @@ function main(){
     // printMat(m)
     box(m)
     printMat(m)
+    let q = [[1,2,3],[4,5,6],[7,8,9]]
+    let arr = matrixToArray(q);
+    console.log(...arr)
 }
 
 main()
