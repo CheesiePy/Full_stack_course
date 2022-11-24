@@ -113,7 +113,23 @@ function matrixToArray(m){
 }
 
 
-function ArraytoMatrix(arr){
+function ArrayToMatrix(arr, num) {
+    // Convert an array to a matrix for easier mental math
+    let matrix = [], i, k;
+    // k is the number of columns
+    // i is the number of rows
+
+    for (i = 0, k = -1; i < arr.length; i++) { // i is the number of rows and k is the number of columns
+        if (i % num == 0) {
+            k++;
+            matrix[k] = [];
+        }
+        matrix[k].push(arr[i]);
+    }
+    return matrix;
+}
+
+
     /**
      * input: [1, 1, 1, 1, 0, 1, 1, 1, 1].lengh = size**2
      * 
@@ -124,7 +140,6 @@ function ArraytoMatrix(arr){
      * 
      * 
      */
-}
 
 
 function indexC(i,j,size){
@@ -157,13 +172,17 @@ function main(){
     // printMat(m)
     box(m)
     printMat(m)
-    let q = [[1,2,3],[4,5,6],[7,8,9]]
+    let q = [[1,2,3,0],[4,5,6,0],[7,8,9,0],[0,1,2,0]]
     let arr = matrixToArray(q);
-    console.log(...arr)
+    console.log(arr)
+    let m2 = ArrayToMatrix(arr, Math.sqrt(arr.length))
+    console.log(m2)
+    printMat(m2)
+// }
+
+
 }
-
 main()
-
 
 
 
