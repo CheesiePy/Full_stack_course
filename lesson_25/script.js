@@ -79,8 +79,13 @@ function checkForWin(matrix, symbol) {
 
 
 
-function checkforTie(arg) {
-    // Check for a tie
+function checkforTie(array) {
+    for(let i = 0; i < array.length; i++){
+        if(array[i].textContent == ''){
+            return false;
+        }
+    }
+    return true;
 }
 
 
@@ -116,9 +121,14 @@ for (let i = 0; i < buttonArray.length; i++) { // Loop through the buttons and a
         }else{
             alert("This button is already clicked!");
         }
+
         if(checkForWin(matrix, symbol)){
             alert(`${symbol} has won`)
             reset()
+        }
+
+        if(checkforTie(coArray)){
+            alert("no body won it was a Tie!")
         }
         
     }
