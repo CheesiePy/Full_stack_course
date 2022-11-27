@@ -36,7 +36,6 @@ function ArrayToMatrix(arr, num) {
     return matrix;
 }
 
- 
 function checkForWin(matrix, symbol) {
     // this function check for all possible wining 
     let rows_c, col_c, diagonal_c, diagonalT_c; // counters 
@@ -75,10 +74,6 @@ function checkForWin(matrix, symbol) {
 }
 
 
-
-
-
-
 function checkforTie(array) {
     for(let i = 0; i < array.length; i++){
         if(array[i].textContent == ''){
@@ -89,9 +84,47 @@ function checkforTie(array) {
 }
 
 
+function register(){
+    let player_one = prompt("Player One: Enter Your Name");
+    let player_two = prompt("Player Two: Enter Your Name");
+    document.getElementById("playerOne").textContent = player_one;
+    document.getElementById("playerTwo").textContent = player_two;
+    p1['name'] = player_one;
+    p2['name'] = player_two;
+}
+
+function incrementScore(symbol){
+    if(symbol == 'X'){
+        p1['points']++;
+        document.getElementById("player1Score").textContent = p1['points'];
+    }else{
+        p2['points']++;
+        document.getElementById("player2Score").textContent = p2['points'];
+    }
+}
+
+function resetAll(){
+    reset();
+    document.getElementById("playerOne").textContent = "Player 1";
+    document.getElementById("playerTwo").textContent = "Player 2";
+    document.getElementById("player1Score").textContent = 0;
+    document.getElementById("player2Score").textContent = 0;
+}
+
+
 
 // Game Logic
 let counter = 0; // Keep track of the number of turns
+
+let p1= {
+    name: "Player 1",
+    points: 0
+};
+
+let p2 = {
+    name: "Player 2",
+    points: 0
+};
 
 let buttonArray = document.querySelectorAll(".btn"); // Get all the buttons
 
@@ -124,7 +157,8 @@ for (let i = 0; i < buttonArray.length; i++) { // Loop through the buttons and a
 
         if(checkForWin(matrix, symbol)){
             alert(`${symbol} has won`)
-            reset()
+            incrementScore(symbol);
+            reset();
         }
 
         if(checkforTie(coArray)){

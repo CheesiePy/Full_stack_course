@@ -11,6 +11,10 @@
 <body>
     <!-- create a 3 X 3 table with botton in every box -->
     <div class="container">
+        <div class="player1">
+            <h1 id="playerOne">Player 1</h1>
+            <h2 id="player1Score">0</h2>
+        </div>
             <div class="table_div">
                 <table>
                     <tr>
@@ -30,12 +34,17 @@
                     </tr>
                 </table>
             </div>
-        <div class="side_manu">
-            <button id="reset_btn" onclick="reset()">Reset</button>
+        <div class="player2">
+            <h1 id="playerTwo">Player 2</h1>
+            <h2 id="player2Score">0</h2>
         </div>
     </div>
  
-
+    <div class="side_manu">
+        <button id="reset_btn" onclick="reset()">Reset</button>
+        <button id="register" onclick="register()">Register</button>
+        <button id="reset_btn" onclick="resetAll()">Reset All</button>
+    </div>
 
    
     
