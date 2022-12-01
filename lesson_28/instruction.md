@@ -9,9 +9,15 @@ In this lesson, you will build a login page for your app. The login page will al
 
 ```bash
 
-    
+git clone https://github.com/CheesiePy/Full_stack_course.git
 
 ```
+in the terminal, navigate to the lesson_28 folder
+
+```bash
+    cd <Folder_location>/Full_stack_course/lesson_28
+```
+
 
 
 #### Instructions:
