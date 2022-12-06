@@ -1,6 +1,11 @@
 {
     "test_user" : {
-        "username": "username",
+        "username": "CheesiePy",
+        "password": "password"
+    },
+
+    "user1" : {
+        "username": "SUp12",
         "password": "password"
     }
 }
