@@ -1,1 +1,5 @@
 /* center the login form in the middle of the screen */
+button{
+    width: 50px;
+    height: 50px;
+}
