@@ -9,7 +9,17 @@
     <title>Log In</title>
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <button onclick="redirect('index.html')"></button>
+    <div class="container">
+        <div class="login-form">
+            <h1>Log In</h1>
+            <div id="login">
+                <form>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </form>
+                    <button onclick="login()">Log In</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
