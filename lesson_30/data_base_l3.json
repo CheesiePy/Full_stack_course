@@ -1,0 +1,35 @@
+{
+    
+    "users" : {
+        "user1" : {
+            "name" : "John",
+            "last_name" : "Doe",
+            "age" : 30
+        },
+        "user2" : {
+            "name" : "Mary",
+            "last_name" : "Moe",
+            "age" : 25
+        },
+        "user3" : {
+            "name" : "Peter",
+            "last_name" : "Noname",
+            "age" : 27
+        },
+        "user4" : {
+            "name" : "Jane",
+            "last_name" : "Doe",
+            "age" : 22
+        },
+        "user5" : {
+            "name" : "Bob",
+            "last_name" : "Noname",
+            "age" : 32
+        },
+        "user6" : {
+            "name" : "Alice",
+            "last_name" : "Doe",
+            "age" : 24
+        }
+    }
+}
