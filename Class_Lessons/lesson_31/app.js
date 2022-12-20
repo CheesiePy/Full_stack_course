@@ -28,28 +28,17 @@ import { readFile, writeFile, appendFile, readFileSync} from 'fs';
 // console.log(content_a)
 
 
-let Data_base
-async function f(){
-  await new Promise((resolve, reject) => {
-    readFile("ex1.txt", "utf8", (error, data) => {
-      if(error){
-        console.log("cannot find file");
-      }
-      resolve(data)
-    })
-  }).then(data => {Data_base = data.split(" ")});
-}
-
-
-await f();
-console.log(Data_base)
-
-
-
-
-
-
-
+// let Data_base
+// async function f(){
+//   await new Promise((resolve, reject) => {
+//     readFile("ex1.txt", "utf8", (error, data) => {
+//       if(error){
+//         console.log("cannot find file");
+//       }
+//       resolve(data)
+//     })
+//   }).then(data => {Data_base = data.split(" ")});
+// }
 
 
 
@@ -84,5 +73,7 @@ console.log(Data_base)
 
 
 // Q.1: split the data from readme in to an array of substrings (words). and print it!
+
+console.log(readFileSync("ex1.txt", "utf8").split(" "));
 
 // Q.2: find the word that appeard the maximum amount of time in the text.
