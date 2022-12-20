@@ -28,22 +28,21 @@ import { readFile, writeFile, appendFile, readFileSync} from 'fs';
 // console.log(content_a)
 
 
-// let Data_base
-// async function f(){
-//   await new Promise((resolve, reject) => {
-//     readFile("ex1.txt", "utf8", (error, data) => {
-//       if(error){
-//         console.log("cannot find file");
-//       }
-//       resolve(data)
-//     })
-//   }).then(data => {Data_base = data.split(" ")});
-// }
+let Data_base
+async function f(){
+  await new Promise((resolve, reject) => {
+    readFile("ex1.txt", "utf8", (error, data) => {
+      if(error){
+        console.log("cannot find file");
+      }
+      resolve(data)
+    })
+  }).then(data => {Data_base = data.split(" ")});
+}
 
 
-
-console.log(readFileSync("ex1.txt", "utf8").split(" "));
-
+await f();
+console.log(Data_base)
 
 
 
