@@ -1,8 +1,8 @@
 // Read And Write Files With Node.js
 
 // fs module is a core module, so we don't need to install it
-import { rejects } from 'assert';
-import { readFile, writeFile, appendFile } from 'fs';
+
+import { readFile, writeFile, appendFile, readFileSync} from 'fs';
 
 // readFile is an asynchronous function
 // readFile takes 3 arguments: file name, encoding, callback function
@@ -28,20 +28,21 @@ import { readFile, writeFile, appendFile } from 'fs';
 // console.log(content_a)
 
 
-let Data_base
-async function f(){
-  await new Promise((resolve, reject) => {
-    readFile("ex1.txt", "utf8", (error, data) => {
-      if(error){
-        console.log("cannot find file");
-      }
-      resolve(data)
-    })
-  }).then(data => {Data_base = data.split(" ")});
-}
+// let Data_base
+// async function f(){
+//   await new Promise((resolve, reject) => {
+//     readFile("ex1.txt", "utf8", (error, data) => {
+//       if(error){
+//         console.log("cannot find file");
+//       }
+//       resolve(data)
+//     })
+//   }).then(data => {Data_base = data.split(" ")});
+// }
 
-await f()
-console.log(Data_base)
+
+
+console.log(readFileSync("ex1.txt", "utf8").split(" "));
 
 
 
