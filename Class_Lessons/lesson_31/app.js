@@ -2,7 +2,8 @@
 
 // fs module is a core module, so we don't need to install it
 
-import { readFile, writeFile, appendFile, readFileSync} from 'fs';
+// import { readFile, writeFile, appendFile, readFileSync} from 'fs';
+const fs = require('fs')
 
 // readFile is an asynchronous function
 // readFile takes 3 arguments: file name, encoding, callback function
@@ -41,6 +42,7 @@ import { readFile, writeFile, appendFile, readFileSync} from 'fs';
 // }
 
 
+// console.log(Data_base)
 
 
 
@@ -74,6 +76,6 @@ import { readFile, writeFile, appendFile, readFileSync} from 'fs';
 
 // Q.1: split the data from readme in to an array of substrings (words). and print it!
 
-console.log(readFileSync("ex1.txt", "utf8").split(" "));
+console.log(fs.readFileSync("ex1.txt", "utf8").split(" "));
 
 // Q.2: find the word that appeard the maximum amount of time in the text.
