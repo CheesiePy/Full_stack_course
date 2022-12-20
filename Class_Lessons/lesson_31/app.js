@@ -22,29 +22,29 @@ readFile('readme.txt', 'utf8', (err, data) => {
 // writeFile takes 3 arguments: file name, data, callback function
 // callback function takes 1 argument: error
 
-writeFile('writeme.txt', 'Goodbye world~', (err) => {
-    if (err){
-        console.log(err);
-    } 
-    console.log('Write operation completed');
-    }
-);
+// writeFile('writeme.txt', 'Goodbye world~', (err) => {
+//     if (err){
+//         console.log(err);
+//     } 
+//     console.log('Write operation completed');
+//     }
+// );
 
 
-// // appendFile is an asynchronous function
-// // appendFile takes 3 arguments: file name, data, callback function
-// // callback function takes 1 argument: error
+// // // appendFile is an asynchronous function
+// // // appendFile takes 3 arguments: file name, data, callback function
+// // // callback function takes 1 argument: error
 
-appendFile('writeme1.txt', '\n \t\ \t Hello World!', (err) => {
-    if (err){
-        console.log(err);
-    } 
-    console.log('Append operation completed');
-    }
-);
+// appendFile('writeme1.txt', '\n \t\ \t Hello World!', (err) => {
+//     if (err){
+//         console.log(err);
+//     } 
+//     console.log('Append operation completed');
+//     }
+// );
 
 
 
 // Q.1: split the data from readme in to an array of substrings (words). and print it!
 
-
+// Q.2: find the word that appeard the maximum amount of time in the text.
