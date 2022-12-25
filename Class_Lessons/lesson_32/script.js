@@ -7,5 +7,32 @@ let f = () => {
 }
 
 
-    // code goes here
-$("button").click(f).keypress(f); // if we use defer in the script tag, we don't need this... but it's good practice to use it anyway
+
+$("button").click(f).keypress(f);
+
+
+
+/// ex -s
+
+// //1
+// $(document).ready(function () {
+//     $(".btn-hide").click(function () {
+//         $(".hw").hide();
+//     });
+// });
+
+
+// //2
+// $(document).ready(function () {
+//     $("p").click(function () {
+//         $(this).hide();
+//     });
+// });
+
+
+// //3
+// $(document).ready(function () {
+//     $(".btn-hide-first").click(function () {
+//         $("p:first").hide();
+//     });
+// });
